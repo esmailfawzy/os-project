@@ -13,3 +13,7 @@ RUN npm install express
 
 # While running the image
 CMD node test.js
+
+
+#  javac => compile code
+#  java => run code

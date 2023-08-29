@@ -1,1 +1,10 @@
+# specify which branch and Configurations
+on:
+  push:
+    branches:
+      - "main"
 
+
+# specify commands that run when configs are correct/true
+jobs:
+  
