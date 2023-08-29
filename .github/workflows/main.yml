@@ -11,8 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "Test github actions"
-        run: pwd
-      
-      - name: "Test printing"
-        run: echo "Esmail Fawzy"
+      # download/copy files on selected machine: ubuntu-latest
+      - uses: actions/checkout@v3
+
+      - name: "Login to dockerhub"
+        run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN }}
+
+
