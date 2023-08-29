@@ -7,4 +7,12 @@ on:
 
 # specify commands that run when configs are correct/true
 jobs:
-  
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Test github actions"
+        run: pwd
+      
+      - name: "Test printing"
+        run: echo "Esmail Fawzy"
